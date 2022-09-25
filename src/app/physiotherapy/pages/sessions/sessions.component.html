@@ -1,0 +1,16 @@
+<div class="list">
+  <h1 class="title">Session {{session_number + 1}}</h1>
+
+    <iframe width="1080" height="720" src="{{sessions[1]}}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="move">
+    <h2 class="backButton" (click)="prevSession()"><-- Session {{session_number}}</h2>
+    <div class="mat-spacer"></div>
+    <h2 class="nextButton" (click)="nextSession()">Session {{session_number + 2}} --></h2>
+  </div>
+
+ <!--   <iframe width="1080" height="720" src="https://www.youtube.com/embed/hGU2ceM8aVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+< -->
+
+</div>
