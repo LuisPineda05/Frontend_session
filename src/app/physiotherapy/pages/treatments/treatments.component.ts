@@ -29,6 +29,9 @@ export class TreatmentsComponent implements OnInit {
     })
   }
 
+
+
+
    getTreatmentByQuery(title: string){
     if(title?.length) {
       this.treatmentsService.getTreatmentByTitle(title).subscribe((response: any)=> {
@@ -38,6 +41,7 @@ export class TreatmentsComponent implements OnInit {
       this.getAllTreatments();
     }
   }
+
 
 
 }

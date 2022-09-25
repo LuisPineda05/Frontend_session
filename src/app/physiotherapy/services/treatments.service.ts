@@ -68,4 +68,12 @@ export class TreatmentsService {
         catchError(this.handleError));
   }
 
+  getTreatmentById(id: number): Observable<Treatment> {
+    return this.http.get<Treatment>(
+      `${this.basePath}/${id}`,
+      this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
 }
